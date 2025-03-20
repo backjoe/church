@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catholic Mass App Smart Link</title>
+  <script>
+    function openApp() {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      if (/android/i.test(userAgent)) {
+        // Android 기기
+        window.location.href = "intent://#Intent;package=com.aycka.apps.MassReadings;scheme=laudate;end";
+        setTimeout(function () {
+          window.location.href = "https://play.google.com/store/apps/details?id=com.aycka.apps.MassReadings";
+        }, 2000);
+      } else if (/iPad|iPhone|iPod/.test(userAgent)) {
+        // iOS 기기
+        window.location.href = "laudate://";
+        setTimeout(function () {
+          window.location.href = "https://apps.apple.com/us/app/laudate-1-catholic-app/id499428207";
+        }, 2000);
+      } else {
+        // 기타 플랫폼 (PC 등)
+        window.location.href = "https://apps.apple.com/us/app/laudate-1-catholic-app/id499428207";
+      }
+    }
+  </script>
+</head>
+<body onload="openApp()">
+  <p style="text-align:center;">앱으로 이동 중입니다...</p>
+</body>
+</html>
