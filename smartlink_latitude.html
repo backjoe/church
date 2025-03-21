@@ -10,16 +10,10 @@
 
       if (/android/i.test(userAgent)) {
         // Android 기기
-        window.location.href = "intent://#Intent;package=com.aycka.apps.MassReadings;scheme=laudate;end";
-        setTimeout(function () {
-          window.location.href = "https://play.google.com/store/apps/details?id=com.aycka.apps.MassReadings";
-        }, 2000);
+        window.location.href = "https://apps.apple.com/us/app/laudate-1-catholic-app/id499428207";
       } else if (/iPad|iPhone|iPod/.test(userAgent)) {
         // iOS 기기
-        window.location.href = "laudate://";
-        setTimeout(function () {
-          window.location.href = "https://apps.apple.com/us/app/laudate-1-catholic-app/id499428207";
-        }, 2000);
+        window.location.href = "https://apps.apple.com/us/app/laudate-1-catholic-app/id499428207";
       } else {
         // 기타 플랫폼 (PC 등)
         window.location.href = "https://apps.apple.com/us/app/laudate-1-catholic-app/id499428207";
