@@ -7,13 +7,13 @@
       var ua = navigator.userAgent || navigator.vendor || window.opera;
 
       if (/android/i.test(ua)) {
-        window.location.href = "intent://#Intent;package=pk.catholic.missa;end";
+        window.location.href = "https://maria.catholic.or.kr/mi_pr/missa/missa.asp";
         setTimeout(function(){
           window.location.href = "https://play.google.com/store/apps/details?id=pk.catholic.missa";
         }, 1500);
       } else if (/iPad|iPhone|iPod/.test(ua)) {
         // iOS는 공식 URL Scheme이 없으므로 App Store로만 연결 가능
-        window.location.href = "https://apps.apple.com/kr/app/%EB%A7%A4%EC%9D%BC%EB%AF%B8%EC%82%AC/id346753847";
+        window.location.href = "https://maria.catholic.or.kr/mi_pr/missa/missa.asp";
       } else {
         // 기타 플랫폼은 웹사이트로
         window.location.href = "https://maria.catholic.or.kr/mi_pr/missa/missa.asp";
